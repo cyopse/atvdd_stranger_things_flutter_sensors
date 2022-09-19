@@ -111,6 +111,16 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               mostraImagens(),
+              const SizedBox(
+                width: 10,
+              ),
+              Text(
+                'detectou? ${(_isNear == true ? 'true' : 'false')}',
+                style: const TextStyle(
+                  fontSize: 30,
+                  color: Colors.amber,
+                ),
+              )
             ],
           ),
         ),
